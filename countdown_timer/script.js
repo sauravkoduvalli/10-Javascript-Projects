@@ -15,7 +15,7 @@ function getCountDown(date) {
   // time calculations for years, months, days, hours, minutes and seconds.
   let days = Math.floor(diffInDates / (1000 * 60 * 60 * 24));
   let hours = Math.floor((diffInDates % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)  );
-  let minutes = Mat.floor((diffInDates % (1000 * 60 * 60)) / (1000 * 60));
+  let minutes = Math.floor((diffInDates % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((diffInDates % (1000 * 60)) / 1000);
 
   // display the result in the elements with the help of id.
